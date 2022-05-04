@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get '/journey_calculator' => 'distfind#journeyCalculator'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  post '/distance_profile' => 'distfind#distanceProfileCalc'
 end

@@ -1,0 +1,11 @@
+<h1>Distance Calculator</h1>
+
+<%= form_with url: "/distance_profile", local: true, data: { turbo: false } do |f| %>
+
+<%= text_field_tag :endLocation %>
+
+<%= text_field_tag :startLocation %>
+
+<%= submit_tag "Find my Journey Distance" %>
+
+<% end %>
