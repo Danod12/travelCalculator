@@ -7,13 +7,8 @@ class DistfindController < ApplicationController
     end
 
     
-
     def distanceProfileCalc
-
-    @num1 = params[:startLocation]
-    @num2 = params[:endLocation]
-
-    @distanceTravel = DistanceFinder.findDistance(@num1.to_i, @num2.to_i)
+    @data = DistanceFinder.findDistance()
 
 
     end
