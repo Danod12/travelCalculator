@@ -20,6 +20,8 @@ gem "importmap-rails"
 
 gem 'json', '~> 2.6', '>= 2.6.1'
 
+gem 'nokogiri', '~> 1.13', '>= 1.13.5'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem "turbo-rails"
 
