@@ -8,8 +8,27 @@ class DistfindController < ApplicationController
 
     
     def distanceProfileCalc
-    @data = DistanceFinder.findDistance()
 
+        @srtPos = params[:startingLocation] 
+        @fnsPos = params[:finishLocation]
+
+   
+    @startLatitudeInt = DistanceFinder.findLatStartPosition(@srtPos)
+    @startLongitudeInt = DistanceFinder.findLonStartPosition(@srtPos)
+    
+
+    @finishLatitudeInt = DistanceFinder.findLatFinishPosition(@fnsPos)
+    @finishLongitudeInt = DistanceFinder.findLonFinishPosition(@fnsPos)
+
+    @totalDistance = DistanceFinder.distanceCalculation(@startLatitudeInt,@finishLatitudeInt, @startLongitudeInt,@finishLongitudeInt)
+
+
+
+   
+
+    
+
+    
 
     end
 
