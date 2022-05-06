@@ -10,7 +10,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
-#gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.4"
 
 
 
@@ -79,7 +79,3 @@ group :test do
   gem "webdrivers"
 end
 
-group :production do
-gem 'pg', '~> 1.3', '>= 1.3.5'
-gem 'rails_12factor', '~> 0.0.3'
-end
