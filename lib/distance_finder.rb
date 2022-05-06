@@ -73,15 +73,6 @@ class DistanceFinder
 
     end
 
-
-
-
-
-
-
-
-
-    
     
 
 end
