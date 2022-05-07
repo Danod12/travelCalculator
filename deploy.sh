@@ -19,4 +19,4 @@ then
   sudo docker rm $CONTAINER_NAME
 fi
 
-sudo docker run -p 8086:8086 -d --name $CONTAINER_NAME $IMAGE_NAME
+sudo docker run -p 8888:8888 -d --name $CONTAINER_NAME $IMAGE_NAME
