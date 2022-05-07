@@ -3,7 +3,7 @@
 
 CURRENT_INSTANCE=$(sudo docker ps -a -q --filter ancestor="$IMAGE_NAME" --format="{{.ID}}")
 
-#if an instance does exist stop the CURRENT_INSTANC
+#if an instance does exist stop the CURRENT_INSTANCe
 if [ "$CURRENT_INSTANCE" ]
 then
   sudo docker rm $(sudo docker stop $CURRENT_INSTANCE)
