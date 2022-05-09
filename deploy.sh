@@ -9,7 +9,7 @@ then
   sudo docker rm $(sudo docker stop $CURRENT_INSTANCE)
 fi
 
-# Pull down the isntance from dockerhub
+# Pull down the isntance from dockerhubdf
 sudo docker pull $IMAGE_NAME
 
 #Check if docker container exists with the name of $CONTAINER_NAME if it does remove the CONTAINER_NAME
